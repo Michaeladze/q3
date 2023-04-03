@@ -1,0 +1,15 @@
+.button {
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    color: white;
+    background-color: var(--primary);
+    width: 100px;
+    font-size: 14px;
+}
+
+.button[disabled] {
+    background-color: var(--border-color);
+}

@@ -1,0 +1,15 @@
+:root {
+    --primary: #5352ed;
+
+    --border-color: #dfe4ea;
+    --hover: #f1f2f6;
+
+    --text-primary: #2f3542;
+    --text-secondary: #57606f;
+
+    --status-success: #2ed573;
+    --status-error: #ff4757;
+    --status-info: #5352ed;
+
+    --depth4: 0px 0.3px 0.9px rgba(0, 0, 0, 0.1), 0px 1.6px 3.6px rgba(0, 0, 0, 0.13);
+}

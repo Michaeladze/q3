@@ -1,0 +1,74 @@
+.home__tiles {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.home__tile {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.home__main {
+    margin-top: 32px;
+    display: flex;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+}
+
+.home__charts {
+    width: 50%;
+}
+
+.home__logs {
+    width: 50%;
+    border-left: 1px solid var(--border-color);
+    font-size: 16px;
+}
+
+.chart__group {
+    display: flex;
+    height: 160px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.chart__labels {
+    width: 100px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.chart__label {
+    font-size: 18px;
+}
+
+.chart__value {
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.chart {
+    width: 100%;
+}
+
+.log {
+    padding: 8px;
+    display: flex;
+    gap: 8px;
+}
+
+.log__time {
+    color: var(--text-secondary);
+}

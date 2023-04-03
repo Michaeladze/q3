@@ -1,0 +1,19 @@
+@import "styles/reset.css";
+@import "styles/variables.css";
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  color: var(--text-primary);
+}
+
+#chart1,
+#chart2,
+#chart3 {
+  width: 100%;
+  height: 160px;
+  max-width: 100%
+}

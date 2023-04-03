@@ -1,0 +1,20 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.file-group {
+    display: flex;
+    align-items: center;
+}
+
+.form__footer {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.form__footer-spinner {
+    position: relative;
+}
