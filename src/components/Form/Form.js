@@ -74,7 +74,16 @@ const Form = () => {
       body: JSON.stringify(body)
     })
       .then((res) => res.json())
-      .then(() => {
+      .then((res) => {
+        const data = res.body.replace(/"/g, "").replace(/\\n/g, '\n');
+
+        const blob = new Blob([data], { type: 'text/csv' });
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.setAttribute('href', url);
+        a.setAttribute('download', 'download.csv');
+        a.click();
+
         setLoading(false);
       })
       .catch((error) => {
@@ -100,7 +109,7 @@ const Form = () => {
         { formInputs }
 
         <footer className="form__footer">
-          <Button type="submit" disabled={!file}> Submit</Button>
+          <Button type="submit"> Submit</Button>
           { loading && (
             <div className="form__footer-spinner">
               <Spinner/>
