@@ -40,6 +40,10 @@
     border-bottom: 1px solid var(--border-color);
 }
 
+.chart__group:last-child {
+    border-bottom: 0;
+}
+
 .chart__labels {
     width: 100px;
     padding: 8px;
